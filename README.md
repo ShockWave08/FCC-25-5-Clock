@@ -8,7 +8,7 @@ npm Install
 
 npm start
 
-### Issues with Project
+### Issues
 
 #### Expected Behavior
 
