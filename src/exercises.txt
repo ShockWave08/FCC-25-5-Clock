@@ -1,0 +1,17 @@
+1. A man measures the angle of elevation between the ground and a building 800ft away to be 30 degs. How tall is the building?
+2. Calculate the angle of elevation measured from a point on the ground to a 50ft tree that is 20ft away from the tree.
+3. A man on a 100ft observation tower measures the angle of depression of a boat to be 10 degs. How far is the boat from the tower?
+4. Brian’s kite is flying above a field at the end of 65 m of string. If the angle of elevation to the kite
+measures 70°, how high is the kite above Brian’s head?
+5. From the top of a vertical cliff 40 m high, the angle of depression of an object that is level with the base
+of the cliff is 34º. How far is the object from the base of the cliff? 
+
+
+
+
+A car leaves city xyZ ata bearing of N 40 E and travels in a straight line for 300 miles.
+How many miles north and how many miles east has the car  traveled from the city?
+
+
+A boat is 12 miles west and 15 miles south of an island.
+What bearing should the boat take to travel directly to the island?
