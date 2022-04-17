@@ -12,7 +12,7 @@ npm start
 
 #### Expected Behavior
 
-- After the FCC bundle.js 25 + 5 test is complete, the test should stop and values return to default.
+- After the FCC bundle.js 25 + 5 test is complete, the clock should stop and values return to default.
 
   - The start/stop button can be pressed to restart and stop/pause if started.
 
