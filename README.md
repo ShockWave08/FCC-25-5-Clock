@@ -16,7 +16,7 @@ npm start
 
   - The start/stop button can be pressed to restart and stop/pause if started.
 
-  - The reset button should stop the clock and go revert back to default values.
+  - The reset button should stop the clock and revert back to default values.
 
 #### Actual Behavior
 
