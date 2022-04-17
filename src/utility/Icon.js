@@ -6,8 +6,6 @@ import {
   FaCaretUp,
   FaCaretDown,
   FaUndoAlt,
-  FaVolumeUp,
-  FaVolumeMute,
   FaStop,
   FaPlay,
 } from 'react-icons/fa'
@@ -35,11 +33,11 @@ export const ResetIcon = () => {
 }
 
 export const AlarmOn = () => {
-  return <FaVolumeUp />
+  return <FaBell />
 }
 
 export const AlarmOff = () => {
-  return <FaVolumeMute />
+  return <FaRegBellSlash />
 }
 
 //   console.log('start')

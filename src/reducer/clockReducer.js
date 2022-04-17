@@ -32,11 +32,13 @@ function clockReducer(state = initialState, action) {
       return {
         ...state,
         start: false,
-        breakOp: false,
+        onBreak: false,
         intervalId: state.intervalId,
         displayTime: 25 * 60,
-        breakLength: 5 * 60,
-        sessionLength: 25 * 60,
+        // breakLength: 5 * 60,
+        // sessionLength: 25 * 60,
+        breakLength: 5,
+        sessionLength: 25,
       }
 
     case INCREASE:

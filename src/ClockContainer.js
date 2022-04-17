@@ -14,6 +14,7 @@ import Clock from './components/Clock'
 import Controls from './helper/Controls'
 import { initialState } from './initialState'
 import Audio from './components/Audio'
+import AlarmIcon from './components/AlarmIcon'
 
 const ClockContainer = () => {
   const [state, dispatch] = useReducer(clockReducer, initialState)
@@ -38,7 +39,7 @@ const ClockContainer = () => {
   function formatBreakNSessionTime(time) {
     let minutes = Math.floor(time / 60)
 
-    return minutes < 10 ? '0' + minutes : minutes
+    return minutes
   }
 
   // start clock
@@ -73,7 +74,7 @@ const ClockContainer = () => {
         // distch to update the current values of the state
         updateTime(displayTime, onBreak, intervalId)
       }
-    }, 100)
+    }, 1000)
   }
 
   useEffect(() => {
@@ -185,6 +186,8 @@ const ClockContainer = () => {
       </div>
 
       <Audio ref={audioRef} audioScr={audioScr} />
+
+      <AlarmIcon timerDone={state.displayTime} />
     </section>
   )
 }
