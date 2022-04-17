@@ -33,7 +33,7 @@ function clockReducer(state = initialState, action) {
         ...state,
         start: false,
         breakOp: false,
-        intervalId: '',
+        intervalId: state.intervalId,
         displayTime: 25 * 60,
         breakLength: 5 * 60,
         sessionLength: 25 * 60,
@@ -45,20 +45,20 @@ function clockReducer(state = initialState, action) {
         ...state,
         displayTime:
           incData.data === 'session' &&
-          state.start === false &&
+          !state.start &&
           state.displayTime !== 3600
             ? state.sessionLength + 60
             : state.sessionLength,
         sessionLength:
           state.sessionLength === 3600
             ? 3600
-            : incData.data === 'session'
+            : incData.data === 'session' && !state.start
             ? state.sessionLength + 60
             : state.sessionLength,
         breakLength:
           state.breakLength === 3600
             ? 3600
-            : incData.data === 'break'
+            : incData.data === 'break' && !state.start
             ? state.breakLength + 60
             : state.breakLength,
       }
@@ -68,22 +68,20 @@ function clockReducer(state = initialState, action) {
       return {
         ...state,
         displayTime:
-          decData.data === 'session' &&
-          state.start === false &&
-          state.displayTime !== 60
+          decData.data === 'session' && !state.start && state.displayTime !== 60
             ? state.sessionLength - 60
             : state.sessionLength,
 
         sessionLength:
           state.sessionLength === 60
             ? 60
-            : decData.data === 'session'
+            : decData.data === 'session' && !state.start
             ? state.sessionLength - 60
             : state.sessionLength,
         breakLength:
           state.breakLength === 60
             ? 60
-            : decData.data === 'break'
+            : decData.data === 'break' && !state.start
             ? state.breakLength - 60
             : state.breakLength,
       }
