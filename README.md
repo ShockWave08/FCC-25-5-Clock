@@ -31,4 +31,7 @@ Before the test, on manual testing. Everything works perfect.
 
 #### Live Test Link
 
+Use Codepen to test. Local test fails most for some reason.
+Saw it's a known issue in the FCC community.
+
 [Code Pen 25 + 5 Clock](https://codepen.io/shockwave08/pen/dyJjVXZ?editors=0011)
