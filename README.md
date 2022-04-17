@@ -12,9 +12,23 @@ npm start
 
 #### Expected Behavior
 
-When I clck the reset buttoon while the clock is running it should be stopped and the break-length, session-length and time left should return to their default values, 5, 25, 25, respectively.
+After the FCC bundle.js 25 + 5 test is complete, the test should stop and values return to default.
+
+The start/stop button can be pressed to restart and stop/pause if started.
+
+The reset button should stop the clock and go revert back to default values.
 
 #### Actual Behavior
 
-When I clck the reset button while the clock is running, the clock temporarily reverts back to default values.
+When the FCC bundle.js 25 + 5 test is complete, the clock continues.
+
+The Start and stop button has no effect on the clock. It does not stop or start timer.
+
+In the current running state of the clock, pressing the reset button temporarily reverts back to default values.
 However, after a second or so goes right back to where the countdown was before it displayed default values.
+
+Before the test, on manual testing. Everything works perfect.
+
+#### Live Test Link
+
+[Code Pen 25 + 5 Clock](https://codepen.io/shockwave08/pen/dyJjVXZ?editors=0011)
